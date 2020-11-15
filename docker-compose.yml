@@ -1,4 +1,4 @@
-version: "3.8"
+version: "2"
 services:
   website:
     image: j0h94/is-odd:latest
