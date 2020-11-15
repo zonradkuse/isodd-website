@@ -1,0 +1,5 @@
+version: "3.8"
+services:
+  website:
+    image: j0h94/is-odd:latest
+
