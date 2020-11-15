@@ -2,4 +2,6 @@ version: "2"
 services:
   website:
     image: j0h94/is-odd:latest
+    ports:
+      - 8080:8080
 
