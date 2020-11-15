@@ -1,5 +1,14 @@
-<html>
-    <body>
-        <h1>Hallo Welt!</h1>
-    </body>
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8" />
+      <title>is-odd check</title>
+   </head>
+   <body>
+      <h2 th:text="${message}"></h2>
+      
+      <span th:text="${repository}" ></span> repository exists? <span th:text="${repositoryExists}"></span>
+       
+   </body>
+    
 </html>
