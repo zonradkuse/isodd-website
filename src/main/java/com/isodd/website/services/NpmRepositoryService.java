@@ -12,9 +12,11 @@ import lombok.extern.log4j.Log4j2;
 public class NpmRepositoryService {
 	private static final String URL_PREFIX_NPM_PACKAGE = "https://www.npmjs.com/package/";
 	
+	@Cacheable("repositoryExists")
 	public boolean repositoryExists(String repositoryName) {
 		RestTemplate npmTemplate = new RestTemplate();
 		String repositoryUrl = URL_PREFIX_NPM_PACKAGE + repositoryName;
+		log.info("Calling " + repositoryUrl);
 		
 		try {
 			npmTemplate.getForObject(repositoryUrl, String.class);
